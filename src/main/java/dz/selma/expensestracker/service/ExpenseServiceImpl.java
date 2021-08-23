@@ -18,5 +18,10 @@ public class ExpenseServiceImpl implements ExpenseService {
 		// TODO Auto-generated method stub
 		return expenseR.findAll();
 	}
+	@Override
+	public Expense save(Expense expense) {
+		// TODO Auto-generated method stub
+		return expenseR.save(expense);
+	}
 
 }

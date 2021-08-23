@@ -7,4 +7,5 @@ import dz.selma.expensestracker.model.Expense;
 public interface ExpenseService {
 
 	List<Expense> findAll();
+	Expense save(Expense expense);
 }
