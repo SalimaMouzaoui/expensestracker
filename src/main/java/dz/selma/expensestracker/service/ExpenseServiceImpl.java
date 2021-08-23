@@ -23,11 +23,18 @@ public class ExpenseServiceImpl implements ExpenseService {
 		return expenseR.save(expense);
 	}
 	@Override
-	public Expense findById(long id) {
+	public Expense findById(Long id) {
 		// TODO Auto-generated method stub
 		if (expenseR.findById(id).isPresent())
 			return expenseR.findById(id).get();
 		return null;
+	}
+	
+	@Override
+	public void delete(Long id) {
+		// TODO Auto-generated method stub
+		Expense expense = findById(id);
+		expenseR.delete(expense);
 	}
 
 }

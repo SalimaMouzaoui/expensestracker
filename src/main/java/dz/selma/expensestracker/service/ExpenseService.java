@@ -7,6 +7,6 @@ public interface ExpenseService {
 
 	List<Expense> findAll();
 	Expense save(Expense expense);
-	Expense findById(long id);
-	
+	Expense findById(Long id);
+	void delete(Long id);
 }
